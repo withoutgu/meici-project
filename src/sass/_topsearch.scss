@@ -1,0 +1,30 @@
+.top{
+    width: 100%;height: 60px;border-bottom: 1px solid #ddd;position: absolute;z-index: 4;background: #fff;display: none;
+    .topsearch{
+        width: 960px;position: relative;left:50%;margin-left: -480px;height: 100%;
+        .toplogo{
+            display: inline-block;width: 200px;height: 42px;overflow: hidden;
+            img{width: 200px;position: relative;top: 20px;}
+        }
+        //搜索框
+        form{
+            width: 590px;;height: 28px;border: 2px solid #8E0C3A;display: inline-block;overflow: hidden;position: relative;top: 5px;left: 53px;
+            .topkeyword{border: none;display: inline-block;font-size: 14px;padding: 10px 5px;position: relative;top: -6px;width: 560px;}
+            .topsearchBtn{border: none;background: url(../css/img/searchBtn2.gif) no-repeat;width: 28px;height: 28px;position: absolute;right: 0;cursor: pointer;}
+        }
+        
+        .fashionTip{
+            font-size: 12px;color: #8E0C3A;position: absolute;right: 0;width: 95px;height: 45px;display: inline-block;bottom: 0;text-align: center;cursor: pointer;
+            img{position: relative;top: 10px;width: 16px;left: 7px;}
+            span{position: relative;top: 7px;left: 13px;}
+            .tipcontent{
+                width: 960px;height: 180px;background: #fff;z-index: 5;top: 45px;border: 1px solid #ddd;border-top: none;position: absolute;display: none;
+                .tipRow>li{
+                    float: left;text-align: left;display: inline-block;padding:20px 10px 0 25px;color: #8E0C3A;font-weight: bold;
+                    .tipCol{margin-top: 10px;}
+                    .tipCol>li{font-weight: normal;margin-top: 5px;a{color: #666;&:hover{color: #8E0C3A;}}}
+                }
+            }
+        }
+    }
+}

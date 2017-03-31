@@ -1,0 +1,8 @@
+.sidebar{
+    width: 52px;position: fixed;right: 0;height: 100%;z-index: 999;
+    .sidelist{position: absolute;top: 50%;margin-top: -69px;width: 100%;}
+    .sidelist>li>a{width: 100%;display: block;height: 46px;background: url(../css/img/consult.jpg) no-repeat;}
+    .sideservice{background-position:0 0;&:hover{background-position:-52px 0;}}
+    .sidelist>li>.sideQQ{background-position:0 -46px;&:hover{background-position:-52px -46px;}}
+    .sidelist>li>.totop{background-position:0 -92px;&:hover{background-position:-52px -92px;}}
+}

@@ -1,0 +1,16 @@
+.testcarousel{position: relative;overflow: hidden;}
+.big{position: absolute;z-index: 1;overflow: hidden;}
+.horizontal{float: left;}
+.big li a{text-decoration: none;margin: 0;padding: 0;}
+.big li img{display: block;}
+.prev,.next{width: 27px;height: 66px;background: #000;opacity: 0.5;color: #fff;position: absolute;top: 50%;margin-top: -33px;z-index: 2;cursor: pointer;display: none;background: url(../../css/img/jt7.png);}
+.prev{left: 10px;background-position: 0 -201px;}
+.prev:hover{background-position: 0 0;}
+.next:hover{background-position: 0 -67px;}
+.next{right: 10px;background-position: 0 -134px;}
+.page{position: absolute;bottom: 10px;z-index: 3;display: none;}
+.page span{width: 30px;height: 30px;border-radius: 50%;background: #000;opacity: 0.5;text-align: center;line-height: 30px;color: #fff;display: inline-block;cursor: pointer;}
+.page span.active{background: #f00;}
+.smallImg{overflow: hidden;display: flex;justify-content: space-around;position: relative;display: none;}
+.smallImg li{float: left;opacity: 0.3;cursor: pointer}
+.smallImg .active{opacity: 1;}

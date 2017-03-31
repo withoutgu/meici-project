@@ -1,0 +1,17 @@
+requirejs.config({
+    baseUrl:'http://localhost/meici/js',
+    paths:{
+        "jquery":"http://localhost/meici/assets/jquery-3.1.1",
+        "myCarousel":"http://localhost/meici/assets/jquery.testcarousel/jquery.testcarousel",
+        'cm':"common"
+    },
+    shim:{
+        "myCarousel":{
+            deps:["jquery"],
+            exports:'jQuery.fn.testcarousel'
+        },
+        "cm":{
+            deps:["jquery"]
+        }
+    }
+})

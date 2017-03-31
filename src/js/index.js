@@ -1,0 +1,36 @@
+requirejs(['config'],function(){
+    requirejs(['jquery','myCarousel','cm'],function($){
+        //引入侧栏
+        $('.sidebar').load('html/sidebar.html',function(){
+            $('.sidelist').appendTo($('.sidebar'));
+        })
+        //引入头部搜索
+        $('.top').load('html/topsearch.html',function(){
+            $('.topsearch').appendTo($('.top'));
+        })
+        //引入头部html
+        $('#header').load('html/header.html',function(){
+            $('header').appendTo($('#header'));
+        })
+        //引入banner html
+        $('#banner').load('html/banner.html',function(){
+            $('.banner').appendTo($('#banner'));
+        })
+        //引入导航html
+        $('nav').load('html/nav.html',function(){
+            $('.nav').appendTo($('nav'));
+        })
+        //引入尾部
+        $('footer').load('html/footer.html',function(){
+            $('.footer').appendTo($('footer'));
+        })
+        //轮播插件使用
+        $('.carousel').testcarousel({
+            imgList:["http://localhost/meici/img/c1.jpg","http://localhost/meici/img/c2.jpg","http://localhost/meici/img/c3.jpg","http://localhost/meici/img/c4.jpg","http://localhost/meici/img/c5.jpg"],
+            width:960,
+            height:500,
+            smallImg:false
+        })
+        
+    })
+})
