@@ -3,8 +3,6 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 a { color: #333; text-decoration: none; }
 
-a:hover { color: #f00; }
-
 body { color: #333; font-size: 16px; margin: 0; padding: 0; }
 
 p { margin: 0px; }
@@ -100,7 +98,225 @@ nav .nav > li a:last-child img { height: 35px; width: 96px; }
 
 nav .nav > li a.active { background: #8E0C3A; color: #fff; }
 
-nav div { width: 100%; height: 300px; background: #fff; position: absolute; z-index: 6; top: 36px; border: 1px solid #8E0C3A; border-top: none; box-sizing: border-box; display: none; }
+nav article { width: 100%; height: 300px; background: #fff; position: absolute; z-index: 6; top: 36px; border: 1px solid #8E0C3A; border-top: none; box-sizing: border-box; }
+
+nav .navnew > div { height: 100%; display: inline-block; }
+
+nav .navnew .navleft { width: 440px; margin-top: 20px; font-size: 12px; }
+
+nav .navnew .navleft .newrow { display: flex; justify-content: space-around; }
+
+nav .navnew .navleft .newrow > li { float: left; font-weight: bold; color: #8E0C3A; }
+
+nav .navnew .navleft .newrow > li:first-child > .navcol > li > a { font-weight: bold; color: #8E0C3A; }
+
+nav .navnew .navleft .newcol { margin-top: 10px; }
+
+nav .navnew .navleft .newcol li { font-weight: normal; margin-top: 5px; }
+
+nav .navnew .navleft .newcol li a { color: #666; }
+
+nav .navnew .navleft .sp { position: relative; top: -10px; }
+
+nav .navnew .navleft .sp li { margin-bottom: 10px; }
+
+nav .navnew .navleft .sp li a { font-weight: bold; color: #8E0C3A; }
+
+nav .navnew .navleft .navbot { position: absolute; bottom: 20px; left: 20px; }
+
+nav .navnew .navleft .navbot li { margin-bottom: 3px; }
+
+nav .navnew .navleft .navbot li a { text-decoration: underline; color: #666; }
+
+nav .navnew .navright { width: 514px; position: absolute; right: 0; }
+
+nav .navnew .navright p { font-size: 12px; color: #8E0C3A; font-weight: bold; margin: 20px 0 0 20px; padding: 0; }
+
+nav .navnew .navright a { margin-right: 8px; width: 160px; display: block; float: left; }
+
+nav .navnew .navright a:hover span { color: #8E0C3A; }
+
+nav .navnew .navright a span { font-size: 12px; color: #666; }
+
+nav .navwoman .navleft, nav .navman .navleft { width: 600px; font-size: 12px; float: left; }
+
+nav .navwoman .navleft .womanrow, nav .navman .navleft .womanrow { width: 100%; display: flex; justify-content: space-around; margin: 20px 0 0 20px; }
+
+nav .navwoman .navleft .womanrow > li, nav .navman .navleft .womanrow > li { display: inline-block; width: 160px; }
+
+nav .navwoman .navleft .womanrow > li > a, nav .navman .navleft .womanrow > li > a { font-weight: bold; color: #8E0C3A; text-overflow: ellipsis; }
+
+nav .navwoman .navleft .womanrow .womancol, nav .navman .navleft .womanrow .womancol { margin-top: 10px; }
+
+nav .navwoman .navleft .womanrow .womancol li, nav .navman .navleft .womanrow .womancol li { margin-bottom: 5px; }
+
+nav .navwoman .navleft .womanrow .womancol a, nav .navman .navleft .womanrow .womancol a { color: #666; }
+
+nav .navwoman .navright, nav .navman .navright { width: 350px; float: right; }
+
+nav .navwoman .navright img, nav .navman .navright img { width: 300px; margin: 20px 0 0 30px; }
+
+nav .navchild > div { height: 100%; display: inline-block; }
+
+nav .navchild .navleft { width: 440px; margin-top: 20px; font-size: 12px; }
+
+nav .navchild .navleft .newrow { display: flex; justify-content: space-around; }
+
+nav .navchild .navleft .newrow > li { float: left; font-weight: bold; color: #8E0C3A; }
+
+nav .navchild .navleft .newrow > li a:hover { color: #8E0C3A; }
+
+nav .navchild .navleft .newrow > li:first-child > .navcol > li > a { font-weight: bold; color: #8E0C3A; }
+
+nav .navchild .navleft .newcol { margin-top: 10px; }
+
+nav .navchild .navleft .newcol li { font-weight: normal; margin-top: 5px; }
+
+nav .navchild .navleft .newcol li a { color: #666; }
+
+nav .navchild .navleft .sp { position: relative; top: -10px; }
+
+nav .navchild .navleft .sp li { margin-bottom: 10px; }
+
+nav .navchild .navleft .sp li a { font-weight: bold; color: #8E0C3A; }
+
+nav .navchild .navleft .navbot { position: absolute; bottom: 20px; left: 20px; }
+
+nav .navchild .navleft .navbot li { margin-bottom: 3px; }
+
+nav .navchild .navleft .navbot li a { text-decoration: underline; color: #666; }
+
+nav .navchild .navleft .navbot li a:hover { color: #8E0C3A; }
+
+nav .navchild .navright { width: 514px; float: right; }
+
+nav .navchild .navright p { font-size: 12px; color: #8E0C3A; font-weight: bold; margin: 20px 0 0 20px; padding: 0; }
+
+nav .navchild .navright a { margin-right: 8px; width: 160px; display: block; float: left; }
+
+nav .navchild .navright a:hover span { color: #8E0C3A; }
+
+nav .navchild .navright a span { font-size: 12px; color: #666; }
+
+nav .navwatch > div { height: 100%; display: inline-block; }
+
+nav .navwatch .navleft { width: 440px; margin-top: 20px; font-size: 12px; }
+
+nav .navwatch .navleft .newrow { display: flex; justify-content: space-around; }
+
+nav .navwatch .navleft .newrow > li { float: left; font-weight: bold; color: #8E0C3A; }
+
+nav .navwatch .navleft .newrow > li a:hover { color: #8E0C3A; }
+
+nav .navwatch .navleft .newrow > li:first-child > .navcol > li > a { font-weight: bold; color: #8E0C3A; }
+
+nav .navwatch .navleft .newcol { margin-top: 10px; }
+
+nav .navwatch .navleft .newcol li { font-weight: normal; margin-top: 5px; }
+
+nav .navwatch .navleft .newcol li a { color: #666; }
+
+nav .navwatch .navleft .sp { position: relative; top: -10px; }
+
+nav .navwatch .navleft .sp li { margin-bottom: 10px; }
+
+nav .navwatch .navleft .sp li a { font-weight: bold; color: #8E0C3A; }
+
+nav .navwatch .navleft .navbot { position: absolute; bottom: 20px; left: 20px; }
+
+nav .navwatch .navleft .navbot li { margin-bottom: 3px; }
+
+nav .navwatch .navleft .navbot li a { text-decoration: underline; color: #666; }
+
+nav .navwatch .navleft .navbot li a:hover { color: #8E0C3A; }
+
+nav .navwatch .navright { width: 514px; float: right; }
+
+nav .navwatch .navright p { font-size: 12px; color: #8E0C3A; font-weight: bold; margin: 20px 0 0 20px; padding: 0; }
+
+nav .navwatch .navright a { margin-right: 8px; width: 160px; display: block; float: left; }
+
+nav .navwatch .navright a:hover span { color: #8E0C3A; }
+
+nav .navwatch .navright a span { font-size: 12px; color: #666; }
+
+nav .navbrand > div { height: 100%; display: inline-block; }
+
+nav .navbrand .navleft { width: 100%; margin-top: 20px; font-size: 12px; }
+
+nav .navbrand .navleft .newrow { display: flex; justify-content: space-around; }
+
+nav .navbrand .navleft .newrow > li { float: left; font-weight: bold; color: #8E0C3A; }
+
+nav .navbrand .navleft .newrow > li a:hover { color: #8E0C3A; }
+
+nav .navbrand .navleft .newrow > li:first-child > .navcol > li > a { font-weight: bold; color: #8E0C3A; }
+
+nav .navbrand .navleft .newcol { margin-top: 10px; }
+
+nav .navbrand .navleft .newcol li { font-weight: normal; margin-top: 5px; }
+
+nav .navbrand .navleft .newcol li a { color: #666; }
+
+nav .navbrand .navleft .newcol li img { width: 200px; }
+
+nav .navbrand .navleft .brandimg li a { position: relative; }
+
+nav .navbrand .navleft .brandimg li a > span { width: 200px; display: block; height: 55px; background: rgba(0, 0, 0, 0.5); position: absolute; bottom: 0; color: #fff; text-align: center; line-height: 1.5; padding-top: 10px; }
+
+nav .navbrand .navleft .navbot { position: absolute; bottom: 20px; left: 20px; }
+
+nav .navbrand .navleft .navbot li { margin-bottom: 3px; }
+
+nav .navbrand .navleft .navbot li a { text-decoration: underline; color: #666; }
+
+nav .navbrand .navleft .navbot li a:hover { color: #8E0C3A; }
+
+nav .navsale > div { height: 100%; display: inline-block; }
+
+nav .navsale .navleft { width: 300px; margin-top: 20px; font-size: 12px; }
+
+nav .navsale .navleft .newrow { margin-left: 20px; }
+
+nav .navsale .navleft .newrow > li { float: left; font-weight: bold; color: #8E0C3A; }
+
+nav .navsale .navleft .newrow > li a:hover { color: #8E0C3A; }
+
+nav .navsale .navleft .newcol { margin-top: 10px; }
+
+nav .navsale .navleft .newcol li { font-weight: normal; margin-top: 5px; }
+
+nav .navsale .navleft .newcol li a { color: #666; }
+
+nav .navsale .navleft .navbot { position: absolute; bottom: 20px; left: 20px; }
+
+nav .navsale .navleft .navbot li { margin-bottom: 3px; }
+
+nav .navsale .navleft .navbot li a { text-decoration: underline; color: #666; }
+
+nav .navsale .navleft .navbot li a:hover { color: #8E0C3A; }
+
+nav .navsale .navright { width: 650px; position: absolute; top: 0; font-size: 12px; }
+
+nav .navsale .navright .navrightrow { width: 100%; margin-top: 20px; }
+
+nav .navsale .navright .navrightrow > li > a { font-weight: bold; color: #8E0C3A; }
+
+nav .navsale .navright .navrightrow li { width: 50%; float: left; }
+
+nav .navsale .navright .navrightrow li .navrightcol { margin-top: 10px; }
+
+nav .navsale .navright .navrightrow li .navrightcol li { margin-bottom: 5px; }
+
+nav .navsale .navright .navrightrow li .navrightcol a:hover { color: #8E0C3A; }
+
+nav .navsale .navright img { width: 300px; margin: 20px 10px 0 0; }
+
+nav .navleft .navbot { position: absolute; bottom: 20px; left: 20px; }
+
+nav .navleft .navbot li { margin-bottom: 3px; }
+
+nav .navleft .navbot li a { text-decoration: underline; color: #666; }
 
 .top { width: 100%; height: 60px; border-bottom: 1px solid #ddd; position: absolute; z-index: 4; background: #fff; display: none; }
 
@@ -278,18 +494,20 @@ footer .fBot .fbb a:last-child { position: relative; top: 5px; }
 
 .contentWrap .content .feelmore .fmEmail > .fmtake .fmtackBtn { border: none; background: #222222; color: #fff; width: 70px; height: 27px; position: absolute; top: 0; margin-left: 5px; }
 
-.contentWrap .content .bsCarousel { width: 100%; position: relative; overflow: hidden; }
+.contentWrap .content .bsCarousel { width: 100%; position: relative; overflow: hidden; height: 260px; }
 
 .contentWrap .content .bsCarousel .bsPrev, .contentWrap .content .bsCarousel .bsNext { width: 17px; height: 260px; position: absolute; }
 
-.contentWrap .content .bsCarousel .bsPrev { left: 0; top: 0; }
+.contentWrap .content .bsCarousel .bsPrev { left: 0; top: 0; z-index: 5; }
 
 .contentWrap .content .bsCarousel .bsPrev i { background: url(../css/img/pic_arrow_l.png) no-repeat -3px 4px; width: 17px; height: 26px; display: block; position: absolute; top: 50%; margin-top: -13px; }
 
-.contentWrap .content .bsCarousel .bsNext { right: 0; top: 0; }
+.contentWrap .content .bsCarousel .bsNext { right: 0; top: 0; z-index: 5; }
 
 .contentWrap .content .bsCarousel .bsNext i { background: url(../css/img/pic_arrow_r.png) no-repeat; width: 17px; height: 26px; display: block; position: absolute; top: 50%; margin-top: -13px; }
 
-.contentWrap .content .bsCarousel .bscContent { height: 260px; }
+.contentWrap .content .bsCarousel .bscContent { height: 260px; font-size: 12px; position: relative; }
 
 .contentWrap .content .bsCarousel .bscContent li { float: left; width: 190px; height: 260px; text-align: center; }
+
+.contentWrap .content .bsCarousel .bscContent li p:last-child { color: #999; margin-top: 10px; }

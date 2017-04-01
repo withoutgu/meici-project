@@ -43,16 +43,19 @@
             }
         }
         .bsCarousel{
-            width: 100%;position: relative;overflow: hidden;
+            width: 100%;position: relative;overflow: hidden;height: 260px;
             .bsPrev,.bsNext{width: 17px;height: 260px;position: absolute;}
             
-            .bsPrev{left: 0;top: 0;i{background: url(../css/img/pic_arrow_l.png) no-repeat -3px 4px;width: 17px;height: 26px;display: block;position: absolute;top: 50%;margin-top: -13px;}}
+            .bsPrev{left: 0;top: 0;i{background: url(../css/img/pic_arrow_l.png) no-repeat -3px 4px;width: 17px;height: 26px;display: block;position: absolute;top: 50%;margin-top: -13px;}z-index: 5;}
             
-            .bsNext{right: 0;top: 0;i{background: url(../css/img/pic_arrow_r.png) no-repeat;width: 17px;height: 26px;display: block;position: absolute;top: 50%;margin-top: -13px;}}
+            .bsNext{right: 0;top: 0;i{background: url(../css/img/pic_arrow_r.png) no-repeat;width: 17px;height: 26px;display: block;position: absolute;top: 50%;margin-top: -13px;}z-index: 5}
             
             .bscContent{
-                height: 260px;
-                li{float: left;width: 190px;height: 260px;text-align: center}
+                height: 260px;font-size: 12px;position: relative;
+                li{
+                    float: left;width: 190px;height: 260px;text-align: center;
+                    p:last-child{color: #999;margin-top: 10px;}
+                }
             }
         }
     }

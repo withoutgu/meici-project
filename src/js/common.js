@@ -26,8 +26,8 @@ $(function(){
     })
     
     //时尚导购居中
-    var $oLeft = $('.carousel').offset().left;
-    console.log($oLeft);
+//    var $oLeft = $('.carousel').offset().left;
+//    console.log($oLeft);
     $('.tipcontent').offset({left:-865});
     
     //时尚导购显现
@@ -38,21 +38,19 @@ $(function(){
     })
     
     //导航标签切换
-    $('nav').on('mouseenter','li',function(){
+    $('nav').children('article').hide();
+    $('nav').on('mouseenter','.navli',function(){
         $(this).find('a').addClass('active').parent().siblings().find('a').removeClass('active');
         var $idx = $(this).index();
-        if($idx !== 0 && $idx !== -1){
-            console.log(Boolean($idx !== 0));
-            $('nav').children('div').eq($idx-1).show().siblings('div').hide();
-        }
-    }).on('mouseleave','li',function(){         
-        var $idx = $(this).index();
-        if($idx !== 0 && $idx !== -1){
-            $(this).find('a').removeClass('active');
-            $('nav').children('div').hide();    
-        }
+        console.log($idx);
+        $('nav').children('article').eq($idx-1).show().siblings('article').hide();
+    }).on('mouseleave',function(){
+        $(this).find('a').removeClass('active');
+        $('nav').children('article').hide();
     })
-    
+    $('nav').on('mouseenter','.navnull',function(){  $(this).find('a').addClass('active').parent().siblings().find('a').removeClass('active');
+        $('nav').children('article').hide();
+    })
     //回到顶部
     $('.totop').on('click',function(){
         $('body').animate({scrollTop:0})

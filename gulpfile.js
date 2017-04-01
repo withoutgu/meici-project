@@ -36,7 +36,7 @@ gulp.task('server',function(){
 		 proxy:'http://localhost/meici',
 
 		//监听html文件
-		files:['./src/**/*.html','./src/css/*.css','./src/php/**/*.php'],
+		files:['./src/**/*.html','./src/css/*.css','./src/php/**/*.php','./src/js/**/*.js'],
 	});
 	gulp.watch('./src/sass/*.scss',['buildSass']);
 })
